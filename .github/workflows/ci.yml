@@ -1,0 +1,27 @@
+# CI-Workflow - Skeleton fuer Lab L-004
+#
+# Dieser Workflow ist absichtlich unvollstaendig. Eure Aufgabe im Lab:
+#   TODO-1: Workflow bei Push auf main UND bei Pull Requests ausfuehren
+#   TODO-2: Projekt inkl. Dev-Abhaengigkeiten installieren
+#   TODO-3: pytest ausfuehren (der Schritt muss den Build rot machen,
+#           wenn Tests fehlschlagen)
+#
+# Tipp: .github/workflows/release.yml (Demo D-004) ist eure Vorlage -
+# gleiche Bausteine, anderer Zweck.
+name: CI
+
+on:
+  workflow_dispatch:   # TODO-1: um push (main) und pull_request erweitern
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Platzhalter (TODO-2 und TODO-3 ersetzen diesen Schritt)
+        run: echo "CI ist noch nicht fertig - siehe Lab L-004"

@@ -1,0 +1,47 @@
+# Release-Workflow (Demo D-004): RelNotes generiert seine eigenen Release Notes.
+# Ausloeser: Push eines Tags im Format v*  (z. B. v0.2.0)
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # komplette Historie fuer git log
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: RelNotes installieren
+        run: pip install -e ".[dev]"
+
+      - name: Tag-Stand testen
+        run: python -m pytest -q
+
+      - name: Commits seit letztem Tag sammeln
+        run: |
+          PREV=$(git describe --tags --abbrev=0 "${GITHUB_REF_NAME}^" 2>/dev/null || true)
+          if [ -n "$PREV" ]; then
+            RANGE="$PREV..${GITHUB_REF_NAME}"
+          else
+            RANGE="${GITHUB_REF_NAME}"
+          fi
+          echo "Range: $RANGE"
+          git log "$RANGE" --no-merges --pretty=format:"%h|%an|%s" > commits.txt
+
+      - name: Release Notes generieren
+        run: relnotes --input commits.txt --output RELEASE_NOTES.md
+
+      - name: GitHub Release erstellen
+        uses: softprops/action-gh-release@v2
+        with:
+          body_path: RELEASE_NOTES.md

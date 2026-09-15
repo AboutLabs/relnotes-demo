@@ -1,0 +1,15 @@
+a1b2c3d|Anna Beispiel|feat(cli): eingabedatei per --input einlesen
+b2c3d4e|Ben Muster|feat(render): markdown-ausgabe mit sektionen
+c3d4e5f|Cem Yilmaz|fix(parser): leere zeilen werden uebersprungen
+d4e5f6a|Dana Weber|  Fix: tippfehler in der statistik-ausgabe
+e5f6a7b|Anna Beispiel|feat(api)!: token-authentifizierung statt session-cookie
+f6a7b8c|Ben Muster|docs: readme um setup-anleitung ergaenzt
+a7b8c9d|Bot|Merge pull request #4 from team/feature-render
+b8c9d0e|Cem Yilmaz|refactor(grouping): sektionsreihenfolge als konstante
+c9d0e1f|Dana Weber|test(parser): fall fuer merge-commits ergaenzt
+d0e1f2a|Anna Beispiel|perf(parser): regex wird nur einmal kompiliert
+e1f2a3b|Ben Muster|chore: gitignore um venv ergaenzt
+f2a3b4c|Cem Yilmaz|fix(render): breaking-sektion stand unter features
+a3b4c5d|Bot|Merge pull request #6 from team/fix-render
+b4c5d6e|Dana Weber|wip: experimente mit json-ausgabe
+c5d6e7f|Anna Beispiel|build: pyproject auf setuptools 68 angehoben

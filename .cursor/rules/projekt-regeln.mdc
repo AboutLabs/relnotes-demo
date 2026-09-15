@@ -1,0 +1,13 @@
+---
+description: Verbindliche Projektregeln fuer RelNotes (Kursprojekt ppedv Agentic Coding)
+alwaysApply: true
+---
+
+Befolge strikt die Regeln aus AGENTS.md im Repo-Root. Kurzfassung:
+
+- Minimale Patches, nur aufgabenbezogene Aenderungen
+- Nach jeder Aenderung `python -m pytest -q` ausfuehren; fertig = zugehoerige Tests gruen, keine Regressionen
+- Bestehende Tests niemals anpassen oder loeschen, um sie gruen zu bekommen
+- Keine neuen Dependencies, keine Netzwerkzugriffe, keine Secrets
+- Commit-Messages nach Conventional Commits, deutsch
+- Vor Codeaenderungen einen kurzen Plan mit betroffenen Dateien nennen
