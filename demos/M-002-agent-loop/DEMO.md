@@ -13,7 +13,7 @@ Ein API-Commit wird mit einem fehlerhaften Scope dargestellt. Das Team möchte d
 Welche Änderung ist fachlich nötig? Bleiben andere Fehler außerhalb dieses Auftrags? Was sagt der erfolgreiche Zieltest über noch ungeprüfte Fälle aus?
 
 ## Prompthilfe
-> Analysiere test_scope_ohne_klammern und parser.py. Nenne Ursache, minimale Korrektur und Testnachweis für BUG-1. BUG-2 und BUG-3 bleiben offen. Bestehende Assertions bleiben erhalten. Beachte AGENTS.md und warte auf Planfreigabe.
+> Analysiere `test_scope_ohne_klammern` und `parser.py`. Nenne die Ursache, eine minimale Korrektur und den Testnachweis für BUG-1. BUG-2 und BUG-3 bleiben offen. Bestehende Assertions bleiben erhalten. Beachte `AGENTS.md` und warte auf meine Planfreigabe.
 
 ## Übergabe und Fallback
 Die Vorführung verändert kein Teilnehmer-Repository automatisch. Vor L-002 übernimmt jedes Team nur die gezeigte Scope-Korrektur, prüft den Diff und bestätigt genau zwei verbleibende Parserfehler. Referenzstand `d002` ist im Trainerpaket erzeugbar. Bei Schwierigkeiten die eine Korrektur gemeinsam einarbeiten; Quiet-Code und eigene Tests behalten.

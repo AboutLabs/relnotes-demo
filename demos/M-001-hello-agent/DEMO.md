@@ -13,7 +13,11 @@ Ein Supportmitarbeiter muss erkennen können, welche RelNotes-Version installier
 Welche Anforderung verhindert, dass `--version` irrtümlich eine Eingabedatei verlangt? Welcher Test weist dies nach?
 
 ## Prompthilfe nach der Anforderungsrunde
-> Plane eine Option --version für die CLI. Sie soll die Projektversion ausgeben und mit Exit-Code 0 enden, ohne --input zu benötigen. Nenne den passenden Test. Beachte AGENTS.md. Warte vor Codeänderungen auf Freigabe.
+> Plane eine Option `--version` für RelNotes. Sie soll die Projektversion ausgeben und erfolgreich enden, ohne `--input` zu benötigen. Beachte `AGENTS.md`. Nenne die betroffenen Dateien und den passenden Test. Warte vor Codeänderungen auf meine Freigabe.
+
+Nach Planfreigabe:
+
+> Setze diesen Plan um. Ergänze den Test und führe die zugehörigen Tests sowie die Gesamtsuite aus. Die bekannten Parserfehler bleiben außerhalb dieses Auftrags.
 
 ## Übergabe und Fallback
 Die Demo läuft im Trainer-Repository. Die Teilnehmer beginnen L-001 an ihrem eigenen Stand; `--version` ist keine Voraussetzung. Bei ausgefallenem Agenten Plan und Diff anhand eines vorbereiteten Referenzstands erklären. Trainerbefehl: `python scripts/build_course_checkpoint.py m001 <neuer-zielordner>` aus dem Master-Repository. Die Musterlösung wird nur im Trainerpaket bereitgestellt.

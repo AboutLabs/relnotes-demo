@@ -20,6 +20,8 @@ bibliothek, Layout `src/`, Tests mit pytest.
 
 1. **Minimale Patches.** Ändere nur, was für die konkrete Aufgabe nötig ist.
    Kein Umformatieren fremder Dateien, kein Umbenennen ohne Auftrag.
+   Erklärende Kommentare im Produktivcode und den Codewalkthrough in der
+   README nicht entfernen, sofern die Aufgabe sie nicht betrifft.
 2. **Tests sind die Abnahme.** Führe nach jeder Änderung `python -m pytest -q`
    aus. Eine Aufgabe ist erst fertig, wenn die zugehörigen Tests grün sind
    und keine vorher grünen Tests rot geworden sind. Zusätzlich sind Anforderungen,

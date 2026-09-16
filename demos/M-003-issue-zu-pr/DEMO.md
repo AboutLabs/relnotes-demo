@@ -24,7 +24,7 @@ Erwartet werden keine fehlgeschlagenen Tests. Die konkrete Zahl erfolgreicher Te
 Kann der Reviewer aus dem PR erkennen, welches Problem gelöst wurde, welche Prüfungen liefen und welche Einschränkungen verbleiben?
 
 ## Prompthilfe
-> Plane ISSUE-01 anhand des Issue-Texts. Nenne betroffene Dateien und Tests, beachte AGENTS.md und warte auf Freigabe. Bereite nach geprüfter Umsetzung eine PR-Beschreibung mit Problem, Änderung und tatsächlich ausgeführten Testbefehlen vor. Den PR öffne ich selbst.
+> Plane ISSUE-01 anhand des vollständigen Issue-Texts. Nenne betroffene Dateien und Tests, beachte `AGENTS.md` und warte auf meine Freigabe. Bereite nach geprüfter Umsetzung eine PR-Beschreibung mit Problem, Änderung und tatsächlich ausgeführten Testbefehlen vor. Den PR öffne ich selbst.
 
 ## Übergabe und Fallback
 Die Filterfunktion ist keine Voraussetzung für das SemVer-Lab. Alle Teams beginnen ISSUE-02 von ihrem geprüften M-002-Stand. Nach dem Demo-Review keine ungeprüften Änderungen in Team-Repositories kopieren. Bei fehlendem GitHub-Zugriff Diff und PR-Vorlage lokal prüfen; serverseitiges Review gilt dann noch nicht als nachgewiesen. Falls der Demo-Stand nicht stimmt, den vorbereiteten `m002`-Stand verwenden und die Abweichung nicht live reparieren.
